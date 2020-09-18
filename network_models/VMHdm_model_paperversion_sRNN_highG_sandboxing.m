@@ -1,6 +1,7 @@
 
 N = 1000; sp = 0.1; thr = 0.1;
 
+rng(42);
 % reset everything to be safe
 [doOnline,plotTrial,doOverlap,doStructured,doBanded,doDecorr] = deal(false);
 
@@ -29,7 +30,7 @@ doDecorr=1; doHebbian=1; scPost = 1; beta = 0.1; tRun = 1000;
 reroll = 0;
 
 doOnline = 1;
-nreps = 1;
+nreps = 10;
 %%
 if(reroll)
     [w1,w2] = deal(zeros(N,1));

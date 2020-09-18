@@ -2,6 +2,7 @@
 N = 1000; sp = 0.1; thr = 0.1;
 
 % reset everything to be safe
+rng(42);
 [doOnline,plotTrial,doOverlap,doStructured,doBanded,doDecorr] = deal(false);
 
 dt      = 0.005;

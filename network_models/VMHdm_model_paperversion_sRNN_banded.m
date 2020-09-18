@@ -3,6 +3,7 @@ N   = 1000;
 [w1,w2] = deal(zeros(N,1));
 
 % reset everything to be safe
+rng(42);
 doOnline     = 0;
 plotTrial    = 0;
 doOverlap    = 0;
